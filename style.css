@@ -18,11 +18,8 @@ h3 {
 
 /* Header */
 header {
-  display: flex;
   align-items: center;
-  text-align: center;
 }
-
 
 /* Containers */
 div {
@@ -80,6 +77,12 @@ hr {
   border: 1px solid black;
 }
 
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .about-section {
   text-align: center;
 }
@@ -98,4 +101,31 @@ hr {
 .intro-text h3{
   text-align: center;
   margin-right: 50px;
+}
+
+.portfolio-container {
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio {
+  flex: 0 0 auto;
+  width: 250px;
+  text-align: left;
+}
+
+.portfolio h3 {
+  text-align: center;
+  margin-bottom: 10 px;
+}
+
+.portfolio img {
+  max-width: 100%; /* Ensure images fit within their containers */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove extra space below images */
+}
+
+.porfolio p {
+  font-size: 14px; /* Set font size for project descriptions */
+  line-height: 1.5; /* Set line height for better readability */
 }
